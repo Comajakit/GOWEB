@@ -1,4 +1,4 @@
-module bookings-udemy
+module github.com/tsawler/bookings-app
 
 go 1.15
 
