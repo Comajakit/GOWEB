@@ -1,10 +1,9 @@
 package render
 
 import (
+	"github.com/comajakit/goweb/internal/models"
 	"net/http"
 	"testing"
-
-	"github.com/comajakit/goweb/internal/models"
 )
 
 func TestAddDefaultData(t *testing.T) {

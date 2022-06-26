@@ -4,13 +4,12 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
+	"github.com/justinas/nosurf"
+	"github.com/comajakit/goweb/internal/config"
+	"github.com/comajakit/goweb/internal/models"
 	"html/template"
 	"net/http"
 	"path/filepath"
-
-	"github.com/comajakit/goweb/internal/config"
-	"github.com/comajakit/goweb/internal/models"
-	"github.com/justinas/nosurf"
 )
 
 var functions = template.FuncMap{}

@@ -1,12 +1,11 @@
 package main
 
 import (
-	"net/http"
-
-	"github.com/comajakit/goweb/internal/config"
-	"github.com/comajakit/goweb/internal/handlers"
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
+	"github.com/comajakit/goweb/internal/config"
+	"github.com/comajakit/goweb/internal/handlers"
+	"net/http"
 )
 
 func routes(app *config.AppConfig) http.Handler {

@@ -2,10 +2,9 @@ package main
 
 import (
 	"fmt"
-	"testing"
-
-	"github.com/comajakit/goweb/internal/config"
 	"github.com/go-chi/chi"
+	"github.com/comajakit/goweb/internal/config"
+	"testing"
 )
 
 func TestRoutes(t *testing.T) {
