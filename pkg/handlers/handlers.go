@@ -1,10 +1,11 @@
 package handlers
 
 import (
-	"github.com/tsawler/bookings-app/pkg/config"
-	"github.com/tsawler/bookings-app/pkg/models"
-	"github.com/tsawler/bookings-app/pkg/render"
 	"net/http"
+
+	"github.com/comajakit/goweb/pkg/config"
+	"github.com/comajakit/goweb/pkg/models"
+	"github.com/comajakit/goweb/pkg/render"
 )
 
 // Repo the repository used by the handlers
