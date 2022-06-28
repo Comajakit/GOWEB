@@ -3,13 +3,6 @@ package handlers
 import (
 	"encoding/gob"
 	"fmt"
-	"html/template"
-	"log"
-	"net/http"
-	"os"
-	"path/filepath"
-	"time"
-
 	"github.com/alexedwards/scs/v2"
 	"github.com/comajakit/goweb/internal/config"
 	"github.com/comajakit/goweb/internal/models"
@@ -17,6 +10,12 @@ import (
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
 	"github.com/justinas/nosurf"
+	"html/template"
+	"log"
+	"net/http"
+	"os"
+	"path/filepath"
+	"time"
 )
 
 var app config.AppConfig
@@ -57,7 +56,7 @@ func getRoutes() http.Handler {
 	repo := NewRepo(&app)
 	NewHandlers(repo)
 
-	render.NewTemplates(&app)
+	render.NewRenderer(&app)
 
 	mux := chi.NewRouter()
 
